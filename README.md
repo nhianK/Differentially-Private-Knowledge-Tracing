@@ -1,23 +1,38 @@
-# Differentially-Private-Knowledge-Tracing
+##Requirements
 
-Brief description of the overall project.
+
 
 ## Models Overview
 
-This repository contains four distinct models:
-- MonaCoBERT-subgraph
-- DKT-accountant
-- HMM-privacy
+This repository contains four knowledge tracing models implemented with Differential Privacy:
+- MonaCoBERT
+- DKT
+- BKT
 - DKT-plus
 
 Each model has its own specific command line arguments and usage instructions detailed below.
 
 ## Installation
+# Install PyTorch 1.12.0
+pip install torch==1.12.0 torchvision==0.13.0
 
-General installation instructions that apply to all models.
+# Install Opacus 1.3.0 for differential privacy
+pip install opacus==1.3.0
+
+# Additional dependencies
+pip install numpy pandas tqdm matplotlib
+
+# Run in command line
+## Usage
+
+To train the MonacoBERT model on the ASSIST2017 dataset:
 
 ```bash
-# Common installation steps
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-pip install -r requirements.txt
+python -u train.py --model_fn model.pth --model_name monacobert --dataset_name assist2017_pid
+```
+To train DKT
+```bash
+python -u train.py --model_name=dkt --dataset_name ASSIST2012
+```
+
+
