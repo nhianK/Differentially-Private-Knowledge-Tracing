@@ -14,7 +14,10 @@ Each model has its own specific command line arguments and usage instructions de
 
 ## Installation
 # Install PyTorch 1.12.0
-pip install torch==1.12.0 torchvision==0.13.0
+```bash
+pip install torch==1.12.0 
+torchvision==0.13.0
+```
 
 # Install Opacus 1.3.0 for differential privacy
 pip install opacus==1.3.0
