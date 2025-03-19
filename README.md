@@ -20,8 +20,9 @@ torchvision==0.13.0
 ```
 
 # Install Opacus 1.3.0 for differential privacy
+```bash
 pip install opacus==1.3.0
-
+```
 # Additional dependencies
 pip install numpy pandas tqdm matplotlib
 
