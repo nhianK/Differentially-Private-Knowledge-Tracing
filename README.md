@@ -24,8 +24,9 @@ torchvision==0.13.0
 pip install opacus==1.3.0
 ```
 # Additional dependencies
+```bash
 pip install numpy pandas tqdm matplotlib
-
+```
 # Run in command line
 ## Usage
 
